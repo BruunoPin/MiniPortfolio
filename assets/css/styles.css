@@ -102,8 +102,8 @@ img {
 }
 
 .profile-perfil {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   background: linear-gradient(
     180deg,
     hsla(207, 90%, 61%, 1) 0%,
@@ -111,11 +111,16 @@ img {
   );
 }
 
+  .profile-perfil img {
+    width: 90% !important;
+  }
+
+
 .profile-border {
   border: 3.5px solid hsl(207, 90%, 61%);
   justify-self: center;
-  width: 115px;
-  height: 115px;
+  width: 145px;
+  height: 145px;
   display: grid;
   place-items: center;
 }
@@ -181,6 +186,7 @@ img {
 .card img {
   width: 100%;
   height: 100%;
+  max-height: 178.89px;
 }
 
 .projects-modal {
@@ -235,17 +241,17 @@ img {
 /*=============== MEDIA ===============*/
 @media (min-width: 968px) {
   .profile-perfil {
-    width: 115px;
-    height: 115px;
+    width: 200px;
+    height: 200px;
   }
 
   .profile-perfil img {
-    width: 80% !important;
+    width: 90% !important;
   }
 
   .profile-border {
-    width: 130px;
-    height: 130px;
+    width: 215px;
+    height: 215px;
   }
 
   .profile-name {
