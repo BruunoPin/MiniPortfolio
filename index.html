@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+  <!--=============== FONTAWESOME ICONS ===============-->
+  <script src="https://kit.fontawesome.com/f8d92bce3b.js" crossorigin="anonymous"></script>
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+  <title>Portfólio - Bruno Pinheiro</title>
+</head>
+
+<body id="body">
+  <!--=============== HEADER PROFILE ===============-->
+  <header class="profile container position-relative">
+    <!-- THEME BUTTON -->
+    <i class="fa-regular fa-moon change-theme position-absolute end-0 fs-5" id="theme-button"></i>
+
+    <div class="profile-container grid">
+      <div class="profile-data text-center">
+        <div class="profile-border rounded-circle mb-3">
+          <div class="profile-perfil rounded-circle d-flex align-items-end justify-content-center overflow-hidden">
+            <img class="w-75" src="./assets/img/perfil.png" alt="" />
+          </div>
+        </div>
+        <!-- NAME AND SOCIALS -->
+        <h2 class="profile-name">Bruno Pinheiro</h2>
+        <h3 class="profile-profession mb-3">Web Developer</h3>
+
+        <ul class="profile-social d-flex justify-content-center p-0 fs-4">
+          <a href="https://www.linkedin.com/in/bruno-pinheiro-de-oliveira-46579b127/" target="_blank"
+            class="profile-social-link"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/BruunoPin" target="_blank" class="profile-social-link"><i
+              class="fa-brands fa-github"></i></a>
+        </ul>
+      </div>
+      <div class="profile-buttons d-flex align-items-center justify-content-center">
+        <a download="" href="./assets/pdf/Curriculo.pdf"><button type="button" class="button btn btn-primary py-3 px-4">
+            Download CV <i class="fa-solid fa-download ms-1"></i></button></a>
+        <div class="profile-button-small">
+          <a href="https://api.whatsapp.com/send?phone=5585997494038&text=Olá, mais informações!" target="_blank"
+            class="btn btn-light button-whatsapp"><i class="fa-brands fa-whatsapp fs-3"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <section class="filters container text-center">
+      <!--=============== FILTERS TABS ===============-->
+      <div class="btn-group rounded-pill p-1 my-4" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="radio-project" data-target="#projects" checked />
+        <label class="btn btn-outline-light py-3 px-5 text-dark border border-0 rounded-pill filters_button"
+          for="radio-project">Projects</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="radio-skill" data-target="#skills" />
+        <label class="btn btn-outline-light py-3 px-5 text-dark border border-0 rounded-pill filters_button"
+          for="radio-skill">Skills</label>
+      </div>
+
+      <div class="filters__sections">
+        <!--=============== PROJECTS ===============-->
+        <div class="projects-content grid d-flex flex-wrap m-auto justify-content-center" data-content id="projects">
+          <article class="card overflow-hidden rounded-4">
+            <img src="./assets/img/project1.jpg" alt="" class="projects-img" />
+
+            <div class="projects-modal position-absolute w-100 h-100 grid d-flex align-items-end">
+              <div class="card-body">
+                <span class="projects-subtitle text-white">Web</span>
+                <h5 class="card-title text-white fs-6">Payment Site</h5>
+                <a href="#" class="btn btn-primary p-1 projects-button"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card overflow-hidden rounded-4">
+            <img src="./assets/img/project2.jpg" alt="" class="projects-img" />
+
+            <div class="projects-modal position-absolute w-100 h-100 grid d-flex align-items-end">
+              <div class="card-body">
+                <span class="projects-subtitle text-white">Web</span>
+                <h5 class="card-title text-white fs-6">Portfolio</h5>
+                <a href="#" class="btn btn-primary p-1 projects-button"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card overflow-hidden rounded-4">
+            <img src="./assets/img/project3.jpg" alt="" class="projects-img" />
+
+            <div class="projects-modal position-absolute w-100 h-100 grid d-flex align-items-end">
+              <div class="card-body">
+                <span class="projects-subtitle text-white">Mobil</span>
+                <h5 class="card-title text-white fs-6">Fast Food App</h5>
+                <a href="#" class="btn btn-primary p-1 projects-button"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card overflow-hidden rounded-4">
+            <img src="./assets/img/project4.jpg" alt="" class="projects-img" />
+
+            <div class="projects-modal position-absolute w-100 h-100 grid d-flex align-items-end">
+              <div class="card-body">
+                <span class="projects-subtitle text-white">Mobil</span>
+                <h5 class="card-title text-white fs-6">Travel App</h5>
+                <a href="#" class="btn btn-primary p-1 projects-button"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card overflow-hidden rounded-4">
+            <img src="./assets/img/project5.jpg" alt="" class="projects-img" />
+
+            <div class="projects-modal position-absolute w-100 h-100 grid d-flex align-items-end">
+              <div class="card-body">
+                <span class="projects-subtitle text-white">Design</span>
+                <h5 class="card-title text-white fs-6">Music app design</h5>
+                <a href="#" class="btn btn-primary p-1 projects-button"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!--=============== SKILLS ===============-->
+        <div class="skills-content grid d-flex flex-wrap justify-content-center d-none mt-2" data-content id="skills">
+          <div>
+            <img class="skill-img" src="./assets/img/icons8-html-5-48.svg" alt="" />
+            <p class="fw-semibold">HTML5</p>
+          </div>
+          <div>
+            <img class="skill-img" src="./assets/img/icons8-css3-48.svg" alt="" />
+            <p class="fw-semibold">CSS3</p>
+          </div>
+          <div>
+            <img class="skill-img" src="./assets/img/icons8-javascript-48.svg" alt="" />
+            <p class="fw-semibold">JavaScript</p>
+          </div>
+          <div>
+            <img class="skill-img" src="./assets/img/icons8-bootstrap-48.svg" alt="" />
+            <p class="fw-semibold">Bootstrap</p>
+          </div>
+          <div>
+            <img class="skill-img" src="./assets/img/icons8-github-48.svg" alt="" />
+            <p class="fw-semibold">GitHub</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <span class="footer-copy d-block text-center mt-5 mb-1">
+      Portfolio Inspired by Bedimcode
+    </span>
+  </footer>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
